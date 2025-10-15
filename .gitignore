@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+build/
+dist/
+.coverage*
+.pytest_cache/
+.mypy_cache/
+
+# Virtualenv
+.venv/
+.env/
+
+# IDEs/editors
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Logs
+logs/
+*.log
+
+# KiCad project artifacts (created on demand)
+project/
+output/
+*.kicad_prl
+*.kicad_pro
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+*.bak
+
+# SKiDL/erc logs
+*.erc
+*.drc
+*.net
+
+# User settings and saved projects
+projects/
+.nl2eda/

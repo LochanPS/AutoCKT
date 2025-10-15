@@ -1,0 +1,22 @@
+WARNING: KICAD_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\pokka\nl2eda\<frozen importlib._bootstrap_external>:1026=>C:\Users\pokka\nl2eda\<frozen importlib._bootstrap>:488]
+WARNING: KICAD6_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\pokka\nl2eda\<frozen importlib._bootstrap_external>:1026=>C:\Users\pokka\nl2eda\<frozen importlib._bootstrap>:488]
+WARNING: KICAD7_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\pokka\nl2eda\<frozen importlib._bootstrap_external>:1026=>C:\Users\pokka\nl2eda\<frozen importlib._bootstrap>:488]
+WARNING: KICAD8_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\pokka\nl2eda\<frozen importlib._bootstrap_external>:1026=>C:\Users\pokka\nl2eda\<frozen importlib._bootstrap>:488]
+WARNING: KICAD9_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\pokka\nl2eda\<frozen importlib._bootstrap_external>:1026=>C:\Users\pokka\nl2eda\<frozen importlib._bootstrap>:488]
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+ERROR: Can't open file: Simulation_SPICE.
+ @ [C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:166=>C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:91]
+WARNING: Could not load KiCad schematic library "Simulation_SPICE", falling back to backup library. @ [C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:166=>C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:91]
+ERROR: Can't open file: Device.
+ @ [C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:156=>C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:91]
+WARNING: Could not load KiCad schematic library "Device", falling back to backup library. @ [C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:156=>C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:91]
+ERROR: Can't open file: Device.
+ @ [C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:156=>C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:91]
+WARNING: Could not load KiCad schematic library "Device", falling back to backup library. @ [C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:156=>C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:91]
+WARNING: Missing tag on  instantiated at C:\Users\pokka\nl2eda\nl2eda_skidl\generator.py:69.
+INFO: 5 warnings found while generating netlist.
+INFO: 0 errors found while generating netlist.
+

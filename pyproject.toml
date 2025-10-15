@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nl2eda"
+version = "0.1.0"
+description = "Natural Language to EDA: DSL → SKiDL → KiCad, with optional SPICE validation"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "NL2EDA" }]
+license = { file = "LICENSE" }
+dependencies = [
+  "lark-parser",
+  "streamlit",
+  "skidl",
+  "PySpice",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "black",
+]
+
+[tool.black]
+line-length = 100
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["."]

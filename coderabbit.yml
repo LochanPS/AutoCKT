@@ -1,0 +1,14 @@
+# CodeRabbit configuration (minimal)
+# NOTE: Adjust keys/structure per your CodeRabbit setup if it differs.
+# This file helps CodeRabbit focus on Python and provide concise suggestions.
+
+reviews:
+  enabled: true
+  languages: [python]
+  severity_threshold: info
+  summarize_findings: true
+  suggest_fixes: true
+
+exclude_paths:
+  - "plugin/**"
+  - "model/**"
