@@ -2,7 +2,7 @@
 
 ##  Transparency Note
 
-** This project is an experimental learning exercise exploring AI-assisted toolchain design for circuit automation.** NL2EDA (Natural Language to Electronic Design Automation) was created to understand how deterministic parsing, netlist generation, and EDA tool integration can work together to automate circuit design workflows.
+**This project is an experimental learning exercise exploring AI-assisted toolchain design for circuit automation**. NL2EDA (Natural Language to Electronic Design Automation) was created to understand how deterministic parsing, netlist generation, and EDA tool integration can work together to automate circuit design workflows.
 
 ### AI Assistance Disclosure
 
@@ -613,5 +613,6 @@ If you're interested in EDA automation and want to learn more:
 ---
 
 *Built with 🔌 as a learning journey into EDA automation and AI-assisted development.*
+
 
 
