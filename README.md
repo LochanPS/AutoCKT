@@ -1,6 +1,39 @@
-# NL2EDA — Natural Language to EDA/KiCad
+**NL2EDA** — Natural Language to EDA/KiCad
 
-NL2EDA aims to convert human-friendly descriptions into concrete EDA artifacts: a deterministic DSL → SKiDL netlist → KiCad schematic, with optional SPICE simulation for early validation.
+
+**Transparency Note**
+
+This project — NL2EDA (Natural Language to Electronic Design Automation) — was created as a learning project to explore AI-assisted code generation and toolchain design in the context of circuit automation. The work combines deterministic DSL parsing, SKiDL-based netlist generation, and KiCad/SPICE integration.
+
+**AI Assistance**:
+AI tools such as Warp and Claude were used to:
+Draft the initial repository structure, CI setup, and virtual environment configuration.
+Generate starter code for the DSL grammar (Lark), parser module, and Streamlit prototype.
+Produce reference examples for AST serialization, SKiDL netlist generation, and PySpice integration hooks.
+Suggest documentation outlines, module naming conventions, and testing workflows.
+Provide code reviews and refactoring suggestions for consistency and modularity.
+All AI outputs were manually reviewed, modified, and integrated by me to ensure deterministic and explainable behavior.
+
+**My Direct Contributions**:
+Designed the end-to-end pipeline from natural language input → deterministic DSL → AST → SKiDL netlist → KiCad schematic → PySpice simulation.
+Authored and refined the Lark grammar and AST schema to enforce explicit syntax and eliminate ambiguity.
+Implemented and tested parser-to-netlist conversion logic in nl2eda_skidl/generator.py.
+Created the Streamlit UI prototype to visualize the NL→DSL→netlist process.
+Researched KiCad CLI automation and PySpice simulation bindings for future integration phases.
+Documented all development and testing workflows in alignment with reproducible learning practices.
+
+**What I Learned**:
+Practical understanding of grammar-based parsing using Lark and AST construction in Python.
+Internal structure of SKiDL and how to map DSL entities to electronic components and nets.
+Basics of SPICE simulation setup and circuit validation using PySpice.
+Workflow for integrating EDA tools (KiCad CLI) with custom Python-based automation.
+The role of AI-assisted development in accelerating prototyping while maintaining human-directed logic design.
+
+**Purpose**:
+This repository is a learning artifact, not a production-ready EDA system.
+It demonstrates how AI can augment the development of deterministic design tools, helping me learn EDA concepts, circuit representation, and toolchain integration while building a transparent record of my process.
+
+**NL2EDA aims to convert human-friendly descriptions into concrete EDA artifacts: a deterministic DSL → SKiDL netlist → KiCad schematic, with optional SPICE simulation for early validation.**
 
 Phases overview
 - Phase 0 (this commit): Repo skeleton, virtualenv, CI
@@ -8,6 +41,8 @@ Phases overview
 - Phase 2: KiCad integration and schematic rendering
 - Phase 3: PySpice simulation-first validation
 - Phase 4+: UI polish, packaging, Docker, KiCad plugin, optional ML for NL→DSL
+
+**We are at Phase 2 right now.**
 
 Quickstart (Windows PowerShell)
 1) Create venv and upgrade pip (already scaffolded by CI; local optional):
@@ -84,3 +119,4 @@ NL→DSL helper (deterministic)
 Strict symbol mode (optional)
 - Set NL2EDA_STRICT_SYMBOLS=1 to error if a requested library/device cannot be instantiated.
 - Default is non-strict: missing symbols are skipped but nets are kept so the rest of the circuit netlists.
+
